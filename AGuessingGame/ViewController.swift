@@ -12,7 +12,7 @@ import AVFoundation
 class ViewController: UIViewController {
     
     // MARK: Properties
-    
+    let targetNumber = Int.random(in: 1...100)
 
     // MARK: Initializers
     
@@ -37,8 +37,10 @@ class ViewController: UIViewController {
         
         // Speak the message
         synthesizer.speak(utterance)
-
         
+        // Report the target number to the console for testing purposes
+        print("For testing purposes, the random number is \(targetNumber)")
+
     }
 
 
